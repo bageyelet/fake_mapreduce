@@ -44,7 +44,6 @@ class MapReduce:
                 for key in mapper_tuples.keys():
                     for value in mapper_tuples[key]:
                         idx = self._partitioner(key, value)
-                        print("idx:", idx, "key:", key, "num_reducer:", self._num_reducer)
                         if idx in tuples.keys():
                             if key in tuples[idx].keys():
                                 tuples[idx][key].append(value)
