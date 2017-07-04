@@ -17,3 +17,10 @@ def reducer(key, l):
 mapred = MapReduce(mapper, reducer, combiner=reducer)
 mapred.run("in.txt", "out")
 ```
+
+| in.txt        | out/r-00000   |
+| ------------- |:-------------:|
+| The cat is on the table
+And the fox hit the cat
+With a blue hammer on
+the table dog cat blue | 2 |
