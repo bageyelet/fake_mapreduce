@@ -27,17 +27,17 @@ the table dog cat blue
 ```
 out/r-00000
 ```
-the 5
-on  2
+the     5
+on      2
 table   2
-dog 1
-and 1
-a   1
+dog     1
+and     1
+a       1
 hammer  1
 blue    2
-fox 1
-hit 1
-cat 3
-is  1
+fox     1
+hit     1
+cat     3
+is      1
 with    1
 ```
