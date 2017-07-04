@@ -18,9 +18,26 @@ mapred = MapReduce(mapper, reducer, combiner=reducer)
 mapred.run("in.txt", "out")
 ```
 
-| in.txt        | out/r-00000   |
-| ------------- |:-------------:|
-| The cat is on the table
+in.txt
+```
+The cat is on the table
 And the fox hit the cat
 With a blue hammer on
-the table dog cat blue | 2 |
+the table dog cat blue
+```
+out/r-00000
+```
+the 5
+on  2
+table   2
+dog 1
+and 1
+a   1
+hammer  1
+blue    2
+fox 1
+hit 1
+cat 3
+is  1
+with    1
+```
