@@ -44,6 +44,8 @@ class MapReduce:
                 for key in mapper_tuples.keys():
                     for value in mapper_tuples[key]:
                         idx = self._partitioner(key, value)
+                        if idx >= self._num_reducer:
+                            raise Exception("Too many partitions, not enough reducers")
                         if idx in tuples.keys():
                             if key in tuples[idx].keys():
                                 tuples[idx][key].append(value)
